@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <MyMap/>
+        <MyMap api_key={process.env.REACT_APP_GOOGLE_MAP_API_KEY}/>
       </header>
     </div>
   );

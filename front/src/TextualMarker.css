@@ -7,6 +7,7 @@
     word-wrap: break-word;
     /*border: 1px solid green;*/
 }
+
 #marker {
     text-align: center;
     margin: 20px auto auto -100px;
@@ -29,6 +30,10 @@
     top: 50%;
     margin: -20px 0 0 -20px;
     /*border: 1px solid red;*/
+}
+
+.mine {
+    background: #009bbd;
 }
 .pin:after {
     content: "";
@@ -106,4 +111,9 @@
     100% {
         transform: translateY(0) rotate(-45deg);
     }
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 2500ms;
 }

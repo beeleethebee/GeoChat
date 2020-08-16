@@ -3,11 +3,11 @@ import '../TextualMarker.css'
 
 class TextualMarker extends React.Component {
     render() {
-        const { color, name, id, message} = this.props;
+        const { color, name, id, message, number} = this.props;
         return (
-            <div id={'marker'}>
+            <div id={`marker_${number}`}>
                 <div
-                    className={'pin bounce'}
+                    className={id === 'my_marker' ? 'pin bounce mine' :'pin bounce'}
                     style={{ backgroundColor: color, cursor: 'pointer' }}
                     title={name}>
                         <div className="pulse" />
